@@ -1,0 +1,48 @@
+/* ============================================================
+   hack.empire — animations.css
+   ============================================================ */
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity 700ms var(--ease),transform 700ms var(--ease);will-change:opacity,transform}
+.reveal.is-visible{opacity:1;transform:translateY(0)}
+.reveal--left{transform:translateX(-32px)}
+.reveal--right{transform:translateX(32px)}
+.reveal--scale{transform:scale(.94)}
+.reveal--left.is-visible,.reveal--right.is-visible,.reveal--scale.is-visible{transform:none}
+.reveal[data-delay="1"]{transition-delay:80ms}
+.reveal[data-delay="2"]{transition-delay:160ms}
+.reveal[data-delay="3"]{transition-delay:240ms}
+.reveal[data-delay="4"]{transition-delay:320ms}
+.reveal[data-delay="5"]{transition-delay:400ms}
+
+/* ---------- glitch ---------- */
+.glitch{position:relative;display:inline-block;font-family:var(--font-mono);font-weight:700;letter-spacing:.02em;color:var(--text-0)}
+.glitch::before,.glitch::after{content:attr(data-text);position:absolute;top:0;left:0;width:100%;overflow:hidden;pointer-events:none}
+.glitch::before{color:var(--green-1);transform:translate(-2px,0);clip-path:inset(0 0 55% 0);
+  animation:glitchTop 3.6s infinite steps(1);opacity:.9}
+.glitch::after{color:var(--green-2);transform:translate(2px,0);clip-path:inset(55% 0 0 0);
+  animation:glitchBot 3.2s infinite steps(1);opacity:.9}
+@keyframes glitchTop{0%,92%,100%{transform:translate(-2px,0);opacity:0}93%{transform:translate(-4px,-2px);opacity:.9}95%{transform:translate(2px,1px);opacity:.9}97%{transform:translate(-1px,0);opacity:0}}
+@keyframes glitchBot{0%,90%,100%{transform:translate(2px,0);opacity:0}91%{transform:translate(4px,2px);opacity:.9}94%{transform:translate(-2px,-1px);opacity:.9}96%{transform:translate(1px,0);opacity:0}}
+
+/* ---------- float / pulse ---------- */
+.float{animation:float 7s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+@keyframes badgeFloat{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(-3deg) translateY(-6px)}}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.55;transform:scale(.85)}}
+@keyframes rippleAnim{to{transform:scale(3.2);opacity:0}}
+
+/* ---------- gradient line ---------- */
+.gradient-line{height:1px;width:100%;background:linear-gradient(90deg,transparent,var(--green-2),transparent);
+  background-size:200% 100%;animation:gradientMove 4s linear infinite;opacity:.6}
+@keyframes gradientMove{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* ---------- page enter ---------- */
+.page-enter{animation:pageEnter 520ms var(--ease) both}
+@keyframes pageEnter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
+
+/* ---------- utilities ---------- */
+.link-card{display:block;color:inherit}
+.link-card:hover{color:inherit}
+.mono{font-family:var(--font-mono)}
+.muted{color:var(--text-2)}

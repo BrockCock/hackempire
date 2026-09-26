@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<title>hack.empire — моды, которые делают рутину за тебя</title>
+<meta name="description" content="hack.empire — приватные моды для Minecraft. AutoTotem Farm бесплатно, AutoTotem Farm+ за 400₽. Скоро новые моды." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='10' y='4' width='4' height='4' fill='%237dffb0'/%3E%3Crect x='18' y='4' width='4' height='4' fill='%237dffb0'/%3E%3Crect x='6' y='8' width='4' height='16' fill='%237dffb0'/%3E%3Crect x='22' y='8' width='4' height='16' fill='%237dffb0'/%3E%3Crect x='10' y='24' width='4' height='4' fill='%237dffb0'/%3E%3Crect x='18' y='24' width='4' height='4' fill='%237dffb0'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html">
+      <svg viewBox="0 0 32 32" shape-rendering="crispEdges" aria-hidden="true">
+        <rect x="10" y="3"  width="4" height="4" fill="#7dffb0"/>
+        <rect x="18" y="3"  width="4" height="4" fill="#7dffb0"/>
+        <rect x="6"  y="7"  width="4" height="4" fill="#7dffb0"/>
+        <rect x="22" y="7"  width="4" height="4" fill="#7dffb0"/>
+        <rect x="6"  y="11" width="4" height="4" fill="#7dffb0"/>
+        <rect x="22" y="11" width="4" height="4" fill="#7dffb0"/>
+        <rect x="6"  y="15" width="4" height="4" fill="#7dffb0"/>
+        <rect x="22" y="15" width="4" height="4" fill="#7dffb0"/>
+        <rect x="6"  y="19" width="4" height="4" fill="#7dffb0"/>
+        <rect x="22" y="19" width="4" height="4" fill="#7dffb0"/>
+        <rect x="10" y="23" width="4" height="4" fill="#7dffb0"/>
+        <rect x="18" y="23" width="4" height="4" fill="#7dffb0"/>
+      </svg>
+      <span class="glitch" data-text="hack.empire">hack<span class="dot">.</span>empire</span>
+    </a>
+    <button class="nav__burger" aria-label="Меню" aria-expanded="false"><span></span></button>
+    <nav class="nav__links">
+      <a class="nav__link is-active" href="index.html">Главная</a>
+      <a class="nav__link" href="shop.html">Магазин</a>
+      <a class="nav__link" href="download.html">Скачать</a>
+      <a class="nav__link" href="buy.html">Купить</a>
+      <a class="nav__link" href="faq.html">FAQ</a>
+      <a class="btn btn--discord" href="https://discord.gg/tSu2F7nGtX" target="_blank" rel="noopener noreferrer" style="margin-left:8px;">
+        <img src="assets/discord.svg" alt="" width="18" height="18" />
+        Discord
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="page-enter">
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero__grid">
+        <div class="reveal reveal--left">
+          <span class="eyebrow">приватные моды для minecraft</span>
+          <h1 class="hero__title">
+            Моды, которые<br />
+            делают рутину <span class="accent">за тебя.</span>
+          </h1>
+          <p class="hero__lead">
+            hack.empire — это растущая библиотека приватных модов для Minecraft.
+            Сейчас в продаже AutoTotem Farm и его расширенная версия. Дальше —
+            больше: фермы, автоматизация, мониторинг, эскейп.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--lg" href="download.html">Скачать бесплатно</a>
+            <a class="btn btn--ghost btn--lg" href="shop.html">Смотреть моды</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num">2</div>
+              <div class="stat__label">мода в линейке</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">400₽</div>
+              <div class="stat__label">платная версия</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num">24/7</div>
+              <div class="stat__label">поддержка в Discord</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal--right" data-delay="2">
+          <div class="code-window-wrap">
+            <div class="code-window">
+              <div class="code-window__bar">
+                <span class="code-window__dot code-window__dot--r"></span>
+                <span class="code-window__dot code-window__dot--y"></span>
+                <span class="code-window__dot code-window__dot--g"></span>
+              </div>
+              <div class="code-window__body">
+                <div class="code-line"><span class="code-line__num">01</span><span class="code-line__code"><span class="tok-fn">on</span><span class="tok-punct">(</span><span class="tok-str">"totem_farm"</span><span class="tok-punct">) {</span></span></div>
+                <div class="code-line"><span class="code-line__num">02</span><span class="code-line__code">  zone <span class="tok-punct">=</span> <span class="tok-str">"overworld"</span><span class="tok-punct">;</span></span></div>
+                <div class="code-line"><span class="code-line__num">03</span><span class="code-line__code">  priority <span class="tok-punct">=</span> <span class="tok-str">"raid"</span><span class="tok-punct">;</span></span></div>
+                <div class="code-line"><span class="code-line__num">04</span><span class="code-line__code">  autostash <span class="tok-punct">=</span> <span class="tok-bool">true</span><span class="tok-punct">;</span></span></div>
+                <div class="code-line"><span class="code-line__num">05</span><span class="code-line__code"><span class="tok-punct">}</span></span></div>
+                <div class="code-line"><span class="code-line__num">06</span><span class="code-line__code"><span class="tok-cmt">// status: running ✓</span></span></div>
+              </div>
+            </div>
+            <div class="code-window__badge">1.21.x READY</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="gradient-line"></div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">почему hack.empire</span>
+        <h2>Сделано для тех, кто ценит время</h2>
+        <p>Никаких тяжёлых меню и лишних модулей. Только то, что работает — и работает быстро.</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="card reveal" data-delay="1">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg>
+          </div>
+          <h3>Мгновенный отклик</h3>
+          <p>Минимальная задержка цикла. ТП, выпил, эффект — всё срабатывает за миллисекунды.</p>
+        </article>
+        <article class="card reveal" data-delay="2">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/></svg>
+          </div>
+          <h3>Безопасность</h3>
+          <p>Никаких сторонних подключений. Все данные хранятся локально, вебхуки — только по твоему запросу.</p>
+        </article>
+        <article class="card reveal" data-delay="3">
+          <div class="card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3>Обновления</h3>
+          <p>Моды обновляются под актуальные версии. Все апдейты бесплатны для владельцев.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">линейка модов</span>
+        <h2>AutoTotem Farm</h2>
+        <p>Один мод — две версии. Начни с бесплатной, перейди на + когда понадобится больше.</p>
+      </div>
+
+      <div class="grid grid--mods mods-equal">
+        <a class="link-card reveal reveal--left" href="download.html">
+          <article class="mod">
+            <div class="mod__top">
+              <h3 class="mod__name">AutoTotem Farm</h3>
+              <span class="mod__tag mod__tag--free">Free</span>
+            </div>
+            <p class="mod__desc">Базовая автоматизация фарма тотемов. Всё, что нужно для старта.</p>
+            <ul class="feature-list">
+              <li>Автофарм тотемов</li>
+              <li>Простой цикл без задержек</li>
+              <li>Локальные настройки</li>
+            </ul>
+            <div class="mod__actions">
+              <span class="btn btn--ghost btn--block">Скачать →</span>
+            </div>
+          </article>
+        </a>
+
+        <a class="link-card reveal reveal--right" href="shop.html">
+          <article class="mod mod--paid">
+            <div class="mod__top">
+              <h3 class="mod__name">AutoTotem Farm+</h3>
+              <span class="mod__tag mod__tag--paid">Plus</span>
+            </div>
+            <p class="mod__desc">Расширенная версия: монитор <span class="mono">/near</span>, эскейп, вебхуки в Discord.</p>
+            <ul class="feature-list">
+              <li>Всё из бесплатной версии</li>
+              <li>Монитор /near + белый список</li>
+              <li>Эскейп при игроке</li>
+              <li>Discord-вебхуки</li>
+            </ul>
+            <div class="mod__price">400₽ <small>навсегда</small></div>
+            <div class="mod__actions">
+              <span class="btn btn--primary btn--block">Купить →</span>
+            </div>
+          </article>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="steps-head reveal">
+        <span class="steps-head__hash">//</span>
+        <h2>Установка за 4 шага</h2>
+      </div>
+      <div class="grid grid--4">
+        <article class="step-card reveal" data-delay="1">
+          <div class="step-card__num">1</div>
+          <h3>Ставим Fabric</h3>
+          <p>Скачай Fabric Loader под свою версию Minecraft и запусти установщик.</p>
+        </article>
+        <article class="step-card reveal" data-delay="2">
+          <div class="step-card__num">2</div>
+          <h3>Кидаем .jar</h3>
+          <p>Скопируй мод в папку <code>minecraft/mods</code>.</p>
+        </article>
+        <article class="step-card reveal" data-delay="3">
+          <div class="step-card__num">3</div>
+          <h3>Настраиваем</h3>
+          <p>Открой меню мода клавишей <kbd>Right Shift</kbd>.</p>
+        </article>
+        <article class="step-card reveal" data-delay="4">
+          <div class="step-card__num">4</div>
+          <h3>Играем</h3>
+          <p>Включай нужные функции и занимайся тем, что реально интересно.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">скоро в hack.empire</span>
+        <h2>Дальше — больше</h2>
+        <p>Тотем-фарм — только начало. Мы работаем над новыми модами: автоматизация, мониторинг, утилиты.</p>
+      </div>
+      <div class="grid grid--3">
+        <article class="soon reveal" data-delay="1">
+          <span class="soon__tag"><span class="pulse-dot"></span>coming soon</span>
+          <h3>AutoFarm Suite</h3>
+          <p>Универсальная ферма ресурсов: руда, еда, блоки. Один конфиг — любые задачи.</p>
+          <span class="soon__blur" aria-hidden="true"></span>
+        </article>
+        <article class="soon reveal" data-delay="2">
+          <span class="soon__tag"><span class="pulse-dot"></span>coming soon</span>
+          <h3>Near Monitor Pro</h3>
+          <p>Отдельный мод для слежки за игроками: расширенные алерты, история, статистика.</p>
+          <span class="soon__blur" aria-hidden="true"></span>
+        </article>
+        <article class="soon reveal" data-delay="3">
+          <span class="soon__tag"><span class="pulse-dot"></span>coming soon</span>
+          <h3>Escape Toolkit</h3>
+          <p>Быстрый эскейп при опасности: автоТП, скрытие, ложные следы. Только для своих.</p>
+          <span class="soon__blur" aria-hidden="true"></span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">faq</span>
+        <h2>Частые вопросы</h2>
+        <p>Коротко о том, что спрашивают чаще всего.</p>
+      </div>
+
+      <div class="faq">
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Чем отличается Free от Plus?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>Free — это базовый автофарм тотемов. Plus добавляет монитор <span class="mono">/near</span> с белым списком ников, эскейп при появлении игрока, а также уведомления в Discord через вебхук (near, циклы, низкое HP, голод, смерть, заклин).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Сколько стоит Plus и как оплатить?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>AutoTotem Farm+ стоит 400₽. Оплата производится через Discord-тикет на официальном сервере. Пошаговая инструкция — на странице <a href="buy.html">«Купить»</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Как установить мод?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>Распакуй архив, положи .jar-файл в папку <span class="mono">mods</span> твоего лаунчера (Fabric/Forge — в зависимости от версии). Запусти игру, открой меню мода и настрой параметры под себя.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Обновления платные?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>Нет. Все обновления AutoTotem Farm+ бесплатны для владельцев. Как только выходит новая версия — она появляется в тикете или в закрытом канале.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Есть ли риск бана?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>Мод использует только игровые действия, которые выполняет сам игрок. Однако любой автоматизированный мод может нарушать правила конкретного сервера. Ответственность за использование лежит на тебе — читай правила сервера, где играешь.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Возврат средств возможен?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>Возврат возможен только в случае, если мод не работает по нашей вине и мы не смогли решить проблему. Все вопросы — через тикет в Discord.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Мод собирает мои данные?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>Нет. Все настройки хранятся локально. Единственное внешнее подключение — Discord-вебхук, который ты сам включаешь и указываешь. Если вебхук не настроен — мод никуда не отправляет данные.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Какие версии Minecraft поддерживаются?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>Актуальный список поддерживаемых версий и ядер — в Discord-сервере в канале с релизами. Если твоей версии нет — напиши в тикет, добавим.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">готов начать?</span>
+        <h2>Скачай бесплатно или купи Plus</h2>
+        <p>Бесплатная версия доступна сразу. Платная — через тикет в Discord.</p>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin-top:26px;">
+          <a class="btn btn--primary btn--lg" href="download.html">Скачать Free</a>
+          <a class="btn btn--discord btn--lg" href="buy.html">
+            <img src="assets/discord.svg" alt="" width="18" height="18" />
+            Купить Plus
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="nav__logo" href="index.html" style="margin-bottom:12px;">
+          <svg viewBox="0 0 32 32" shape-rendering="crispEdges" width="28" height="28" aria-hidden="true">
+            <rect x="10" y="3"  width="4" height="4" fill="#7dffb0"/>
+            <rect x="18" y="3"  width="4" height="4" fill="#7dffb0"/>
+            <rect x="6"  y="7"  width="4" height="4" fill="#7dffb0"/>
+            <rect x="22" y="7"  width="4" height="4" fill="#7dffb0"/>
+            <rect x="6"  y="11" width="4" height="4" fill="#7dffb0"/>
+            <rect x="22" y="11" width="4" height="4" fill="#7dffb0"/>
+            <rect x="6"  y="15" width="4" height="4" fill="#7dffb0"/>
+            <rect x="22" y="15" width="4" height="4" fill="#7dffb0"/>
+            <rect x="6"  y="19" width="4" height="4" fill="#7dffb0"/>
+            <rect x="22" y="19" width="4" height="4" fill="#7dffb0"/>
+            <rect x="10" y="23" width="4" height="4" fill="#7dffb0"/>
+            <rect x="18" y="23" width="4" height="4" fill="#7dffb0"/>
+          </svg>
+          <span>hack<span class="dot" style="color:var(--green-1)">.</span>empire</span>
+        </a>
+        <p>Приватные моды для Minecraft. Рутина — на автопилоте.</p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <ul class="footer__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="download.html">Скачать</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Связь</h4>
+        <ul class="footer__list">
+          <li><a href="https://discord.gg/tSu2F7nGtX" target="_blank" rel="noopener noreferrer">Discord-сервер</a></li>
+          <li><a href="buy.html">Как купить</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2025</span> hack.empire</span>
+      <span>сделано с любовью к автоматизации</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/faq.js"></script>
+<script src="js/glitch.js"></script>
+</body>
+</html>

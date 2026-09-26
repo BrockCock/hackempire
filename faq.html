@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+<meta name="referrer" content="strict-origin-when-cross-origin" />
+<title>FAQ — hack.empire</title>
+<meta name="description" content="Частые вопросы по модам hack.empire: покупка, установка, обновления, безопасность." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='10' y='4' width='4' height='4' fill='%237dffb0'/%3E%3Crect x='18' y='4' width='4' height='4' fill='%237dffb0'/%3E%3Crect x='6' y='8' width='4' height='16' fill='%237dffb0'/%3E%3Crect x='22' y='8' width='4' height='16' fill='%237dffb0'/%3E%3Crect x='10' y='24' width='4' height='4' fill='%237dffb0'/%3E%3Crect x='18' y='24' width='4' height='4' fill='%237dffb0'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/animations.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__logo" href="index.html">
+      <svg viewBox="0 0 32 32" shape-rendering="crispEdges" aria-hidden="true">
+        <rect x="10" y="3"  width="4" height="4" fill="#7dffb0"/>
+        <rect x="18" y="3"  width="4" height="4" fill="#7dffb0"/>
+        <rect x="6"  y="7"  width="4" height="4" fill="#7dffb0"/>
+        <rect x="22" y="7"  width="4" height="4" fill="#7dffb0"/>
+        <rect x="6"  y="11" width="4" height="4" fill="#7dffb0"/>
+        <rect x="22" y="11" width="4" height="4" fill="#7dffb0"/>
+        <rect x="6"  y="15" width="4" height="4" fill="#7dffb0"/>
+        <rect x="22" y="15" width="4" height="4" fill="#7dffb0"/>
+        <rect x="6"  y="19" width="4" height="4" fill="#7dffb0"/>
+        <rect x="22" y="19" width="4" height="4" fill="#7dffb0"/>
+        <rect x="10" y="23" width="4" height="4" fill="#7dffb0"/>
+        <rect x="18" y="23" width="4" height="4" fill="#7dffb0"/>
+      </svg>
+      <span class="glitch" data-text="hack.empire">hack<span class="dot">.</span>empire</span>
+    </a>
+    <button class="nav__burger" aria-label="Меню" aria-expanded="false"><span></span></button>
+    <nav class="nav__links">
+      <a class="nav__link" href="index.html">Главная</a>
+      <a class="nav__link" href="shop.html">Магазин</a>
+      <a class="nav__link" href="download.html">Скачать</a>
+      <a class="nav__link" href="buy.html">Купить</a>
+      <a class="nav__link is-active" href="faq.html">FAQ</a>
+      <a class="btn btn--discord" href="https://discord.gg/tSu2F7nGtX" target="_blank" rel="noopener noreferrer" style="margin-left:8px;">
+        <img src="assets/discord.svg" alt="" width="18" height="18" />
+        Discord
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main class="page-enter">
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="eyebrow">faq</span>
+        <h2>Частые вопросы</h2>
+        <p>Коротко о том, что спрашивают чаще всего.</p>
+      </div>
+
+      <div class="faq">
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Чем отличается Free от Plus?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>Free — это базовый автофарм тотемов. Plus добавляет монитор <span class="mono">/near</span> с белым списком ников, эскейп при появлении игрока, а также уведомления в Discord через вебхук (near, циклы, низкое HP, голод, смерть, заклин).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Сколько стоит Plus и как оплатить?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>AutoTotem Farm+ стоит 400₽. Оплата производится через Discord-тикет на официальном сервере. Пошаговая инструкция — на странице <a href="buy.html">«Купить»</a>.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Как установить мод?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>Распакуй архив, положи .jar-файл в папку <span class="mono">mods</span> твоего лаунчера (Fabric/Forge — в зависимости от версии). Запусти игру, открой меню мода и настрой параметры под себя.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Обновления платные?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>Нет. Все обновления AutoTotem Farm+ бесплатны для владельцев. Как только выходит новая версия — она появляется в тикете или в закрытом канале.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Есть ли риск бана?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>Мод использует только игровые действия, которые выполняет сам игрок. Однако любой автоматизированный мод может нарушать правила конкретного сервера. Ответственность за использование лежит на тебе — читай правила сервера, где играешь.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Возврат средств возможен?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>Возврат возможен только в случае, если мод не работает по нашей вине и мы не смогли решить проблему. Все вопросы — через тикет в Discord.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Мод собирает мои данные?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>Нет. Все настройки хранятся локально. Единственное внешнее подключение — Discord-вебхук, который ты сам включаешь и указываешь. Если вебхук не настроен — мод никуда не отправляет данные.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__item reveal">
+          <button class="faq__q" type="button">
+            Какие версии Minecraft поддерживаются?
+            <span class="icon">+</span>
+          </button>
+          <div class="faq__a">
+            <div class="faq__a-inner">
+              <p>Актуальный список поддерживаемых версий и ядер — в Discord-сервере в канале с релизами. Если твоей версии нет — напиши в тикет, добавим.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="max-width:820px;margin:44px auto 0;text-align:center;" class="reveal">
+        <p class="muted">Не нашёл ответ?</p>
+        <a class="btn btn--discord" href="https://discord.gg/tSu2F7nGtX" target="_blank" rel="noopener noreferrer" style="margin-top:10px;">
+          <img src="assets/discord.svg" alt="" width="18" height="18" />
+          Спросить в Discord
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="nav__logo" href="index.html" style="margin-bottom:12px;">
+          <svg viewBox="0 0 32 32" shape-rendering="crispEdges" width="28" height="28" aria-hidden="true">
+            <rect x="10" y="3"  width="4" height="4" fill="#7dffb0"/>
+            <rect x="18" y="3"  width="4" height="4" fill="#7dffb0"/>
+            <rect x="6"  y="7"  width="4" height="4" fill="#7dffb0"/>
+            <rect x="22" y="7"  width="4" height="4" fill="#7dffb0"/>
+            <rect x="6"  y="11" width="4" height="4" fill="#7dffb0"/>
+            <rect x="22" y="11" width="4" height="4" fill="#7dffb0"/>
+            <rect x="6"  y="15" width="4" height="4" fill="#7dffb0"/>
+            <rect x="22" y="15" width="4" height="4" fill="#7dffb0"/>
+            <rect x="6"  y="19" width="4" height="4" fill="#7dffb0"/>
+            <rect x="22" y="19" width="4" height="4" fill="#7dffb0"/>
+            <rect x="10" y="23" width="4" height="4" fill="#7dffb0"/>
+            <rect x="18" y="23" width="4" height="4" fill="#7dffb0"/>
+          </svg>
+          <span>hack<span class="dot" style="color:var(--green-1)">.</span>empire</span>
+        </a>
+        <p>Приватные моды для Minecraft. Рутина — на автопилоте.</p>
+      </div>
+      <div>
+        <h4>Навигация</h4>
+        <ul class="footer__list">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="download.html">Скачать</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Связь</h4>
+        <ul class="footer__list">
+          <li><a href="https://discord.gg/tSu2F7nGtX" target="_blank" rel="noopener noreferrer">Discord-сервер</a></li>
+          <li><a href="buy.html">Как купить</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2025</span> hack.empire</span>
+      <span>сделано с любовью к автоматизации</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/faq.js"></script>
+<script src="js/glitch.js"></script>
+</body>
+</html>

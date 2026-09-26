@@ -1,0 +1,54 @@
+/* ============================================================
+   hack.empire — base.css
+   ============================================================ */
+
+:root{
+  --bg-0:#050706; --bg-1:#0a0f0c; --bg-2:#0f1712; --bg-3:#14201a;
+  --line:#1c2b22; --line-strong:#24402f;
+  --green-0:#7dffb0; --green-1:#3dff88; --green-2:#00e676; --green-3:#00b35a; --green-dim:#0e6b3a;
+  --text-0:#eafff2; --text-1:#b6d9c4; --text-2:#6f8d7c; --text-3:#455a4d;
+  --amber:#ffcc4d; --amber-dim:#3a2f0e;
+  --glow-soft:0 0 18px rgba(61,255,136,.18);
+  --glow-mid:0 0 28px rgba(61,255,136,.32);
+  --r-sm:8px; --r-md:14px; --r-lg:20px;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --t-fast:160ms; --t-mid:280ms; --t-slow:480ms;
+  --font-sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+  --nav-h:68px; --maxw:1200px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 16px);-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:
+    radial-gradient(1200px 700px at 15% -10%,rgba(0,230,118,.10),transparent 60%),
+    radial-gradient(900px 600px at 110% 10%,rgba(0,230,118,.06),transparent 55%),
+    var(--bg-0);
+  color:var(--text-0);font-family:var(--font-sans);font-size:16px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;min-height:100vh;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background-image:
+    linear-gradient(rgba(61,255,136,.035) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(61,255,136,.035) 1px,transparent 1px);
+  background-size:44px 44px;
+  -webkit-mask-image:radial-gradient(ellipse at 50% 0%,#000 30%,transparent 85%);
+  mask-image:radial-gradient(ellipse at 50% 0%,#000 30%,transparent 85%);
+}
+h1,h2,h3,h4{margin:0 0 .5em;font-weight:800;letter-spacing:-.02em;line-height:1.12;color:var(--text-0)}
+h1{font-size:clamp(2.1rem,5vw,3.6rem)}
+h2{font-size:clamp(1.6rem,3.4vw,2.3rem)}
+h3{font-size:clamp(1.15rem,2vw,1.4rem)}
+p{margin:0 0 1em;color:var(--text-1)}
+a{color:var(--green-1);text-decoration:none;transition:color var(--t-fast) var(--ease)}
+a:hover{color:var(--green-0)}
+::selection{background:rgba(61,255,136,.28);color:#fff}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:var(--bg-1)}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,var(--green-3),var(--green-dim));border-radius:999px;border:2px solid var(--bg-1)}
+::-webkit-scrollbar-thumb:hover{background:var(--green-2)}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}
+}
